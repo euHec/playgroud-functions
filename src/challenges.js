@@ -19,6 +19,19 @@ console.log(compareTrue(macaco, macaco));
 
 // Desafio 2 - Crie a função splitSentence
 
+function splitSentence (phrases) {
+    // if (phrases === 'foguete') {
+    //   return phrases;
+    // }
+    let array = phrases.split(' ');
+
+    return array;
+  }
+
+  console.log(splitSentence('go trybe'));
+  console.log(splitSentence('vamo que vamo'));
+  console.log(splitSentence('foguete'));
+
 // Desafio 3 - Crie a função concatName
 
 // Desafio 4 - Crie a função footballPoints
