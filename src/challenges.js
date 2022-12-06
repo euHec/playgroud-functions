@@ -34,6 +34,22 @@ function splitSentence (phrases) {
 
 // Desafio 3 - Crie a função concatName
 
+arrString1 = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+arrString2 = ['foguete', 'não', 'tem', 'ré'];
+arrString3 = ['captain', 'my', 'captain'];
+
+function concatName (arrString) {
+
+  let fistItem = arrString[0];
+  let lastItem = arrString[arrString.length - 1];
+
+  return `${lastItem}, ${fistItem}`;
+}
+
+  console.log(concatName(arrString1));
+  console.log(concatName(arrString2));
+  console.log(concatName(arrString3));
+
 // Desafio 4 - Crie a função footballPoints
 
 // Desafio 5 - Crie a função highestCount
