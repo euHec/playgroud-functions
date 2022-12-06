@@ -60,7 +60,9 @@ console.log(footballPoints(0, 0));
 
 // Desafio 5 - Crie a função highestCount
 
-arr = [9, 1, 2, 3, 9, 5, 7];
+// arr = [9, 1, 2, 3, 9, 5, 7];
+// arr = [0, 4, 4, 4, 9, 2, 1];
+arr = [0, 0, 0];
 
 let higherNumber = arr[0];
 let cont = 0;
@@ -83,8 +85,39 @@ function highestCount (array) {
 
   console.log(highestCount(arr));
 
+
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
+function calcTriangleArea (base, height) {
+  let resultado = (base * height) / 2;
+  return `O valor da área do triângulo é de: ${resultado}`
+
+}
+
+function calcRectangleArea (base, height) {
+  let resultado = (base * height)
+  return `O valor da área do retângulo é de: ${resultado}`
+}
+
+function calcAllAreas (base, height, form) {
+  switch (form) {
+    case 'triângulo':
+      return calcTriangleArea (base, height);
+      break;
+    case 'retângulo':
+      return calcRectangleArea (base, height);
+      break;
+    default:
+      return `Não foi possível fazer o cálculo, insira uma forma geométrica válida`
+      break;
+  }  
+}
+
+let arrVerific = ['triângulo', 'retângulo', 'quadrado'];
+
+  console.log(calcAllAreas(10, 50, arrVerific[0]));
+  console.log(calcAllAreas(10, 50, arrVerific[1]));
+  console.log(calcAllAreas(10, 50, arrVerific[2]));
 // Desafio 7 - Crie a função catAndMouse
 
 // Desafio 8 - Crie a função fizzBuzz
