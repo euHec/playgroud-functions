@@ -60,6 +60,29 @@ console.log(footballPoints(0, 0));
 
 // Desafio 5 - Crie a função highestCount
 
+arr = [9, 1, 2, 3, 9, 5, 7];
+
+let higherNumber = arr[0];
+let cont = 0;
+
+function highestCount (array) {
+  for (let index = 1; index < array.length; index += 1) {
+    if (array[index] > higherNumber) {
+      higherNumber = array[index];
+    }
+  }
+
+  for (let index1 = 0; index1 < array.length; index1 += 1) {
+    if (higherNumber === array[index1]) {
+      cont += 1;
+    }
+  }
+
+  return `O número ${higherNumber} é o maior número e se repete ${cont} vezes`;
+}
+
+  console.log(highestCount(arr));
+
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
 // Desafio 7 - Crie a função catAndMouse
