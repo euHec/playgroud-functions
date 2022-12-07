@@ -85,7 +85,7 @@ console.log(footballPoints(0, 0)); */
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
-function calcTriangleArea (base, height) {
+/* function calcTriangleArea (base, height) {
   return (base * height) / 2;
 
 }
@@ -110,10 +110,32 @@ function calcAllAreas (base, height, form) {
 
   console.log(calcAllAreas(10, 50, 'triângulo'));
   console.log(calcAllAreas(10, 50, 'retângulo'));
-  console.log(calcAllAreas(10, 50, 'quadrado'));
+  console.log(calcAllAreas(10, 50, 'quadrado')); */
 
 // Desafio 7 - Crie a função catAndMouse
 
+function catAndMouse (mouse, cat1, cat2) {
+
+  let positionCat1 = cat1 - mouse;
+  console.log(positionCat1);
+  let positionCat2 = cat2 - mouse;
+  console.log(positionCat2);
+  
+  if (positionCat1 > positionCat2) {
+    return 'cat2';
+  // eslint-disable-next-line no-else-return
+  } else if (positionCat2 > positionCat1) {
+    return 'cat1';
+  } else if (positionCat1 === mouse && positionCat2 === mouse) {
+    return 'os gatos trombam e o rato foge';
+  }
+
+
+}
+
+console.log(catAndMouse(10, 13, 12));
+console.log(catAndMouse(10, 16, 22));
+console.log(catAndMouse(1, 0, 2));
 // Desafio 8 - Crie a função fizzBuzz
 
 // Desafio 9 - Crie a função encode e a função decode
