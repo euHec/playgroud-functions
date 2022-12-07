@@ -48,7 +48,7 @@ function concatName (arrString) {
 
   console.log(concatName(arrString1));
   console.log(concatName(arrString2));
-  console.log(concatName(arrString3)); */
+  console.log(concatName(arrString3)); 
 
 // Desafio 4 - Crie a função footballPoints
 
