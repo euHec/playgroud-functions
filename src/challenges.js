@@ -1,6 +1,6 @@
 // Desafio 1 - Crie a função compareTrue
 
-/* const girafa = true;
+const girafa = true;
 const elefante = true;
 const macaco = false;
 
@@ -15,11 +15,11 @@ function compareTrue (param1, param2) {
 
 }
 
-console.log(compareTrue(macaco, macaco)); */
+console.log(compareTrue(macaco, macaco));
 
 // Desafio 2 - Crie a função splitSentence
 
-/* function splitSentence (phrases) {
+function splitSentence (phrases) {
     // if (phrases === 'foguete') {
     //   return phrases;
     // }
@@ -30,11 +30,11 @@ console.log(compareTrue(macaco, macaco)); */
 
   console.log(splitSentence('go trybe'));
   console.log(splitSentence('vamo que vamo'));
-  console.log(splitSentence('foguete')); */
+  console.log(splitSentence('foguete'));
 
 // Desafio 3 - Crie a função concatName
 
-/* arrString1 = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+arrString1 = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 arrString2 = ['foguete', 'não', 'tem', 'ré'];
 arrString3 = ['captain', 'my', 'captain'];
 
@@ -52,15 +52,15 @@ function concatName (arrString) {
 
 // Desafio 4 - Crie a função footballPoints
 
-/* function footballPoints (wins, ties) {
+function footballPoints (wins, ties) {
   return (wins * 3) + (ties * 1);
 }
 
-console.log(footballPoints(0, 0)); */
+console.log(footballPoints(0, 0));
 
 // Desafio 5 - Crie a função highestCount
 
-/* function highestCount (array) {
+function highestCount (array) {
   let cont = 0;
   let higherNumber = array[0];
 
@@ -81,11 +81,11 @@ console.log(footballPoints(0, 0)); */
 
   console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
   console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
-  console.log(highestCount([0, 0, 0])); */
+  console.log(highestCount([0, 0, 0]));
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
-/* function calcTriangleArea (base, height) {
+function calcTriangleArea (base, height) {
   return (base * height) / 2;
 
 }
@@ -110,7 +110,7 @@ function calcAllAreas (base, height, form) {
 
   console.log(calcAllAreas(10, 50, 'triângulo'));
   console.log(calcAllAreas(10, 50, 'retângulo'));
-  console.log(calcAllAreas(10, 50, 'quadrado')); */
+  console.log(calcAllAreas(10, 50, 'quadrado'));
 
 // Desafio 7 - Crie a função catAndMouse
 
@@ -131,8 +131,8 @@ function catAndMouse (mouse, cat1, cat2) {
 
 }
 
-// console.log(catAndMouse(10, 13, 12));
-// console.log(catAndMouse(10, 16, 22));
+console.log(catAndMouse(10, 13, 12));
+console.log(catAndMouse(10, 16, 22));
 console.log(catAndMouse(1, 2, 0));
 // Desafio 8 - Crie a função fizzBuzz
 
