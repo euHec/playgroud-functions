@@ -215,8 +215,25 @@ function decode (string) {
   console.log(decode('Th3s 3s 1n 2nc4d3ng t2st.'));
   console.log(decode('g4 Tryb2!'));
 // Desafio 10 - Crie a função techList
+  function techList (array, string) {
+    
+    array.sort();
+    
+    let arr = [];
+   
+    for(let i = 0; i < array.length; i += 1) {
+      arr[i] = {
+        ['tech'] : array[i],
+        ['name'] : string,
+     }
+    }
 
-// Não modifique essas linhas
+    return arr;
+  }
+
+  console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
+
+// Não modifique   essas linhas
 module.exports = {
   calcTriangleArea: typeof calcTriangleArea === 'function' ? calcTriangleArea : (() => {}),
   calcRectangleArea: typeof calcRectangleArea === 'function' ? calcRectangleArea : (() => {}),
