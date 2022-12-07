@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 // Desafio 1 - Crie a função compareTrue
 
 const girafa = true;
@@ -136,10 +137,29 @@ console.log(catAndMouse(10, 16, 22));
 console.log(catAndMouse(1, 2, 0));
 // Desafio 8 - Crie a função fizzBuzz
 
-function fizzBuzz () {
+function fizzBuzz (array) {
 
+  let arr = []
+
+  for (let index = 0; index < array.length; index += 1) {
+
+    if (array[index] % 3 === 0 && array[index] % 5 === 0) {
+      arr.push('fizzBuzz');
+    } else if (array[index] % 5 === 0) {
+      arr.push('buzz');
+    } else if (array[index] % 3 === 0) {
+      arr.push('fizz');
+    } else {
+      arr.push('bug!');
+    }
+  }
+
+  return arr;
 }
 
+  console.log(fizzBuzz([2, 15, 7, 9, 45]));
+  console.log(fizzBuzz([7, 9]));
+  console.log(fizzBuzz([9, 25]));
 // Desafio 9 - Crie a função encode e a função decode
 
 // Desafio 10 - Crie a função techList
