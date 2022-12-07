@@ -162,6 +162,58 @@ function fizzBuzz (array) {
   console.log(fizzBuzz([9, 25]));
 // Desafio 9 - Crie a função encode e a função decode
 
+function encode (string) {
+
+    let result = '';
+
+    for (let index = 0; index < string.length; index += 1) {
+      if (string[index] === 'a'){
+        result += '1';
+      } else if (string[index] === 'e') {
+        result += '2';
+      } else if (string[index] === 'i') {
+        result += '3';
+      } else if (string[index] === 'o') {
+        result += '4';
+      } else if (string[index] === 'u') {
+        result += '5';
+      } else {
+        result += [string[index]];
+      }
+    }
+    return result;
+}
+
+function decode (string) {
+  let result = '';
+
+  for (let index = 0; index < string.length; index += 1) {
+    if (string[index] === '1'){
+      result += 'a';
+    } else if (string[index] === '2') {
+      result += 'e';
+    } else if (string[index] === '3') {
+      result += 'i';
+    } else if (string[index] === '4') {
+      result += 'o';
+    } else if (string[index] === '5') {
+      result += 'u';
+    } else {
+      result += [string[index]];
+    }
+  }
+  return result;
+}
+
+  console.log(encode('hello'));
+  console.log(encode('How are you today?'));
+  console.log(encode('This is an encoding test.'));
+  console.log(encode('go Trybe!'));
+
+  console.log(decode('h2ll4'));
+  console.log(decode('H4w 1r2 y45 t4d1y?'));
+  console.log(decode('Th3s 3s 1n 2nc4d3ng t2st.'));
+  console.log(decode('g4 Tryb2!'));
 // Desafio 10 - Crie a função techList
 
 // Não modifique essas linhas
