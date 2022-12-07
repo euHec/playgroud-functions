@@ -117,26 +117,28 @@ function calcAllAreas (base, height, form) {
 function catAndMouse (mouse, cat1, cat2) {
 
   let positionCat1 = cat1 - mouse;
-  console.log(positionCat1);
   let positionCat2 = cat2 - mouse;
-  console.log(positionCat2);
-  
+
+  if (positionCat1 < 0) { positionCat1 = positionCat1 * -1} else if (positionCat2 < 0) { positionCat2 = positionCat2 * -1}
+
   if (positionCat1 > positionCat2) {
     return 'cat2';
-  // eslint-disable-next-line no-else-return
   } else if (positionCat2 > positionCat1) {
     return 'cat1';
-  } else if (positionCat1 === mouse && positionCat2 === mouse) {
+  } else if (positionCat1 === positionCat2){
     return 'os gatos trombam e o rato foge';
   }
 
-
 }
 
-console.log(catAndMouse(10, 13, 12));
-console.log(catAndMouse(10, 16, 22));
-console.log(catAndMouse(1, 0, 2));
+// console.log(catAndMouse(10, 13, 12));
+// console.log(catAndMouse(10, 16, 22));
+console.log(catAndMouse(1, 2, 0));
 // Desafio 8 - Crie a função fizzBuzz
+
+function fizzBuzz () {
+
+}
 
 // Desafio 9 - Crie a função encode e a função decode
 
